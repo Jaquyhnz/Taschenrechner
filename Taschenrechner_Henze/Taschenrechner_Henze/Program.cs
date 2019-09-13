@@ -22,10 +22,10 @@ namespace Taschenrechner_Henze
             {
                 Console.Clear();
 
-                Console.Write("Schreib eine ganze Zahl: ");
+                Console.Write("Schreib eine Zahl: ");
                 double addzahl1 = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Schreibe eine zweite ganze Zahl: ");
+                Console.Write("Schreibe eine zweite Zahl: ");
                 double addzahl2 = Convert.ToInt32(Console.ReadLine());
 
                 double addergebnis = addzahl1 + addzahl2;
@@ -38,10 +38,10 @@ namespace Taschenrechner_Henze
                 Console.Clear();
 
 
-                Console.Write("Schreib eine ganze Zahl: ");
+                Console.Write("Schreib eine Zahl: ");
                 double subzahl1 = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Schreibe eine zweite ganze Zahl: ");
+                Console.Write("Schreibe eine zweite Zahl: ");
                 double subzahl2 = Convert.ToInt32(Console.ReadLine());
 
                 double subergebnis = subzahl1 - subzahl2;
@@ -55,10 +55,10 @@ namespace Taschenrechner_Henze
 
                 Console.Clear();
 
-                Console.Write("Schreib eine ganze Zahl: ");
+                Console.Write("Schreib eine Zahl: ");
                 double mulzahl1 = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Schreibe eine zweite ganze Zahl: ");
+                Console.Write("Schreibe eine zweite Zahl: ");
                 double mulzahl2 = Convert.ToInt32(Console.ReadLine());
 
                 double mulergebnis = mulzahl1 * mulzahl2;
@@ -70,10 +70,10 @@ namespace Taschenrechner_Henze
             {
                 Console.Clear();
 
-                Console.Write("Schreib eine ganze Zahl: ");
+                Console.Write("Schreib eine Zahl: ");
                 double divzahl1 = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Schreibe eine zweite ganze Zahl: ");
+                Console.Write("Schreibe eine zweite Zahl: ");
                 double divzahl2 = Convert.ToInt32(Console.ReadLine());
 
                 double divergebnis = divzahl1 / divzahl2;
