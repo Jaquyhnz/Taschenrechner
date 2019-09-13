@@ -10,15 +10,17 @@ namespace Taschenrechner_Henze
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welchen Rechenvorgang willst du benutzen:");
+            Console.WriteLine("1. Addition");
+            Console.WriteLine("2. Subtraktion");
+            Console.WriteLine("3. Multiplikation");
+            Console.WriteLine("4. Division");
 
-            Console.WriteLine("1 fuer plus , 2 fuer minus , 3 fuer mal , 4 fuer geteilt");
             int auswahl = Convert.ToInt32(Console.ReadLine());
 
             if (auswahl == 1)
             {
                 Console.Clear();
-
-
 
                 Console.Write("Schreib eine ganze Zahl: ");
                 int addzahl1 = Convert.ToInt32(Console.ReadLine());
@@ -33,9 +35,6 @@ namespace Taschenrechner_Henze
             }
             else if (auswahl == 2)
             {
-
-
-
                 Console.Clear();
 
 
@@ -71,9 +70,17 @@ namespace Taschenrechner_Henze
             {
                 Console.Clear();
 
-            }
+                Console.Write("Schreib eine ganze Zahl: ");
+                int divzahl1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.Clear();
+                Console.Write("Schreibe eine zweite ganze Zahl: ");
+                int divzahl2 = Convert.ToInt32(Console.ReadLine());
+
+                int divergebnis = divzahl1 / divzahl2;
+
+                Console.WriteLine(divergebnis);
+                Console.ReadLine();
+            }
         }
     }
 }
