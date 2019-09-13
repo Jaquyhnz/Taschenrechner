@@ -23,12 +23,12 @@ namespace Taschenrechner_Henze
                 Console.Clear();
 
                 Console.Write("Schreib eine ganze Zahl: ");
-                int addzahl1 = Convert.ToInt32(Console.ReadLine());
+                double addzahl1 = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Schreibe eine zweite ganze Zahl: ");
-                int addzahl2 = Convert.ToInt32(Console.ReadLine());
+                double addzahl2 = Convert.ToInt32(Console.ReadLine());
 
-                int addergebnis = addzahl1 + addzahl2;
+                double addergebnis = addzahl1 + addzahl2;
 
                 Console.WriteLine(addergebnis);
                 Console.ReadLine();
@@ -39,12 +39,12 @@ namespace Taschenrechner_Henze
 
 
                 Console.Write("Schreib eine ganze Zahl: ");
-                int subzahl1 = Convert.ToInt32(Console.ReadLine());
+                double subzahl1 = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Schreibe eine zweite ganze Zahl: ");
-                int subzahl2 = Convert.ToInt32(Console.ReadLine());
+                double subzahl2 = Convert.ToInt32(Console.ReadLine());
 
-                int subergebnis = subzahl1 - subzahl2;
+                double subergebnis = subzahl1 - subzahl2;
 
                 Console.WriteLine(subergebnis);
                 Console.ReadLine();
@@ -56,12 +56,12 @@ namespace Taschenrechner_Henze
                 Console.Clear();
 
                 Console.Write("Schreib eine ganze Zahl: ");
-                int mulzahl1 = Convert.ToInt32(Console.ReadLine());
+                double mulzahl1 = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Schreibe eine zweite ganze Zahl: ");
-                int mulzahl2 = Convert.ToInt32(Console.ReadLine());
+                double mulzahl2 = Convert.ToInt32(Console.ReadLine());
 
-                int mulergebnis = mulzahl1 * mulzahl2;
+                double mulergebnis = mulzahl1 * mulzahl2;
 
                 Console.WriteLine(mulergebnis);
                 Console.ReadLine();
@@ -71,12 +71,12 @@ namespace Taschenrechner_Henze
                 Console.Clear();
 
                 Console.Write("Schreib eine ganze Zahl: ");
-                int divzahl1 = Convert.ToInt32(Console.ReadLine());
+                double divzahl1 = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Schreibe eine zweite ganze Zahl: ");
-                int divzahl2 = Convert.ToInt32(Console.ReadLine());
+                double divzahl2 = Convert.ToInt32(Console.ReadLine());
 
-                int divergebnis = divzahl1 / divzahl2;
+                double divergebnis = divzahl1 / divzahl2;
 
                 Console.WriteLine(divergebnis);
                 Console.ReadLine();
