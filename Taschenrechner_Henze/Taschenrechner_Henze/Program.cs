@@ -51,6 +51,28 @@ namespace Taschenrechner_Henze
                 Console.ReadLine();
             }
 
+            else if (auswahl == 3)
+            {
+
+                Console.Clear();
+
+                Console.Write("Schreib eine ganze Zahl: ");
+                int mulzahl1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("Schreibe eine zweite ganze Zahl: ");
+                int mulzahl2 = Convert.ToInt32(Console.ReadLine());
+
+                int mulergebnis = mulzahl1 * mulzahl2;
+
+                Console.WriteLine(mulergebnis);
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.Clear();
+
+            }
+
             Console.Clear();
         }
     }
