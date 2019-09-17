@@ -66,7 +66,7 @@ namespace Taschenrechner_Henze
                 Console.WriteLine(mulergebnis);
                 Console.ReadLine();
             }
-            else
+            else if(auswahl == 4)
             {
                 Console.Clear();
 
@@ -81,6 +81,21 @@ namespace Taschenrechner_Henze
                 Console.WriteLine(divergebnis);
                 Console.ReadLine();
             }
+            else
+            {
+                Console.Clear();
+
+                Console.Write("Schreib eine Zahl:");
+                double wurzahl1 = Convert.ToDouble(Console.ReadLine());
+
+                double wurergebnis = wurzahl1 ;
+
+                Console.WriteLine(wurergebnis);
+                Console.ReadLine();
+            }
+
+
+
         }
     }
 }
