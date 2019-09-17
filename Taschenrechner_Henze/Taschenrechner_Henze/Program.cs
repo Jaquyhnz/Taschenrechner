@@ -52,7 +52,11 @@ namespace Taschenrechner_Henze
             Console.WriteLine("Das Ergebnis ist : " + ergebnis);
             Console.ReadLine();
 
+
+
+            Console.Write("Hallo");
             }
+
         }
     }
 
