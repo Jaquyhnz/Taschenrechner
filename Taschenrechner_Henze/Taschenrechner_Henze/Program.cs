@@ -10,6 +10,10 @@ namespace Taschenrechner_Henze
     {
         static void Main(string[] args)
         {
+            double ergebnis = 0;
+            double zahl1;
+            double zahl2;
+
             Console.WriteLine("Welchen Rechenvorgang willst du benutzen:");
             Console.WriteLine("1. Addition");
             Console.WriteLine("2. Subtraktion");
@@ -18,69 +22,37 @@ namespace Taschenrechner_Henze
 
             int auswahl = Convert.ToInt32(Console.ReadLine());
 
+            Console.Clear();
+
+            Console.Write("Schreib eine Zahl: ");
+            zahl1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Schreibe eine zweite Zahl: ");
+            zahl2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Clear();
+
             if (auswahl == 1)
             {
-                Console.Clear();
-
-                Console.Write("Schreib eine Zahl: ");
-                double addzahl1 = Convert.ToInt32(Console.ReadLine());
-
-                Console.Write("Schreibe eine zweite Zahl: ");
-                double addzahl2 = Convert.ToInt32(Console.ReadLine());
-
-                double addergebnis = addzahl1 + addzahl2;
-
-                Console.WriteLine(addergebnis);
-                Console.ReadLine();
+                ergebnis = zahl1 + zahl2;
             }
             else if (auswahl == 2)
             {
-                Console.Clear();
-
-
-                Console.Write("Schreib eine Zahl: ");
-                double subzahl1 = Convert.ToInt32(Console.ReadLine());
-
-                Console.Write("Schreibe eine zweite Zahl: ");
-                double subzahl2 = Convert.ToInt32(Console.ReadLine());
-
-                double subergebnis = subzahl1 - subzahl2;
-
-                Console.WriteLine(subergebnis);
-                Console.ReadLine();
+                ergebnis = zahl1 - zahl2;
             }
-
             else if (auswahl == 3)
             {
-
-                Console.Clear();
-
-                Console.Write("Schreib eine Zahl: ");
-                double mulzahl1 = Convert.ToInt32(Console.ReadLine());
-
-                Console.Write("Schreibe eine zweite Zahl: ");
-                double mulzahl2 = Convert.ToInt32(Console.ReadLine());
-
-                double mulergebnis = mulzahl1 * mulzahl2;
-
-                Console.WriteLine(mulergebnis);
-                Console.ReadLine();
+                ergebnis = zahl1 * zahl2;
             }
-            else
+            else if (auswahl == 4)
             {
-                Console.Clear();
+                ergebnis = zahl1 / zahl2;
+            }
 
-                Console.Write("Schreib eine Zahl: ");
-                double divzahl1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Das Ergebnis ist : " + ergebnis);
+            Console.ReadLine();
 
-                Console.Write("Schreibe eine zweite Zahl: ");
-                double divzahl2 = Convert.ToInt32(Console.ReadLine());
-
-                double divergebnis = divzahl1 / divzahl2;
-
-                Console.WriteLine(divergebnis);
-                Console.ReadLine();
             }
         }
     }
-}
+
