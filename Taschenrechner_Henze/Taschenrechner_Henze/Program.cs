@@ -29,26 +29,29 @@ namespace Taschenrechner_Henze
             Console.Write("Schreib eine Zahl: ");
             zahl1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Schreibe eine zweite Zahl: ");
-            zahl2 = Convert.ToInt32(Console.ReadLine());
+            if (auswahl < 5)
+            {
+                Console.Write("Schreibe eine zweite Zahl: ");
+                zahl2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.Clear();
+                Console.Clear();
 
-            if (auswahl == 1)
-            {
-                ergebnis = zahl1 + zahl2;
-            }
-            else if (auswahl == 2)
-            {
-                ergebnis = zahl1 - zahl2;
-            }
-            else if (auswahl == 3)
-            {
-                ergebnis = zahl1 * zahl2;
-            }
-            else if (auswahl == 4)
-            {
-                ergebnis = zahl1 / zahl2;
+                if (auswahl == 1)
+                {
+                    ergebnis = zahl1 + zahl2;
+                }
+                else if (auswahl == 2)
+                {
+                    ergebnis = zahl1 - zahl2;
+                }
+                else if (auswahl == 3)
+                {
+                    ergebnis = zahl1 * zahl2;
+                }
+                else if (auswahl == 4)
+                {
+                    ergebnis = zahl1 / zahl2;
+                }
             }
             else if (auswahl == 5)
             {
@@ -62,7 +65,8 @@ namespace Taschenrechner_Henze
             Console.WriteLine("Das Ergebnis ist : " + ergebnis);
             Console.ReadLine();
 
-            }
         }
     }
+}
+
 
