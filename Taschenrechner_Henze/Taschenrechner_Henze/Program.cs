@@ -48,8 +48,13 @@ namespace Taschenrechner_Henze
             {
                 ergebnis = zahl1 / zahl2;
             }
+            else if (auswahl == 5)
+            {
+                ergebnis = Math.Pow(zahl1, 0.5);
+            }
 
             Console.WriteLine("Das Ergebnis ist : " + ergebnis);
+           
             Console.ReadLine();
 
 
