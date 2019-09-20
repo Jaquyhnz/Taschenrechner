@@ -13,6 +13,7 @@ namespace Taschenrechner_Henze
             double ergebnis = 0;
             double zahl1;
             double zahl2;
+            string antwort;
 
             Console.WriteLine("Welchen Rechenvorgang willst du benutzen:");
             Console.WriteLine("1. Addition");
@@ -24,14 +25,24 @@ namespace Taschenrechner_Henze
 
             Console.Clear();
 
-            Console.Write("Schreib eine Zahl: ");
-            zahl1 = Convert.ToInt32(Console.ReadLine());
+            do{
 
-            Console.Write("Schreibe eine zweite Zahl: ");
-            zahl2 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Schreib eine Zahl: ");
+                zahl1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.Clear();
+                Console.Write("Schreibe eine zweite Zahl: ");
+                zahl2 = Convert.ToInt32(Console.ReadLine());
 
+                Console.Clear();
+
+                Console.WriteLine("Wollen sie die Zahlen ändern? Bitte mit \"ja\" oder \"nein\" antworten.");
+                antwort = Console.ReadLine();
+
+                Console.Clear();
+
+            }while (antwort == "ja");
+
+            
             if (auswahl == 1)
             {
                 ergebnis = zahl1 + zahl2;
@@ -49,7 +60,7 @@ namespace Taschenrechner_Henze
                 ergebnis = zahl1 / zahl2;
             }
 
-            Console.WriteLine("Das Ergebnis ist : " + ergebnis);
+            Console.WriteLine("Das Ergebnis ist: " + ergebnis);
             Console.ReadLine();
 
 
